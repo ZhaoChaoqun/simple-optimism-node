@@ -2,10 +2,10 @@
 set -eou
 
 # Wait for the Bedrock flag for this network to be set.
-while [ ! -f /shared/initialized.txt ]; do
-  echo "Waiting for Bedrock node to initialize..."
-  sleep 60
-done
+# while [ ! -f /shared/initialized.txt ]; do
+#   echo "Waiting for Bedrock node to initialize..."
+#   sleep 60
+# done
 
 # Start op-node.
 exec op-node \
