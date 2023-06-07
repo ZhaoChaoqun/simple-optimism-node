@@ -12,7 +12,7 @@ datasources:
   uid: '6R74VAnVz'
   org_id: 1
   type: 'prometheus'
-  url: 'http://prometheus:9090'
+  url: 'http://localhost:9090'
   version: 1
 - access: 'proxy'
   editable: true
@@ -22,5 +22,5 @@ datasources:
   org_id: 1
   type: 'influxdb'
   database: 'l2geth'
-  url: 'http://influxdb:8086'
+  url: 'http://localhost:8086'
   version: 1
