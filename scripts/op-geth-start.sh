@@ -23,7 +23,7 @@ exec geth \
 	--ws.api=debug,eth,txpool,net,engine,web3 \
   --metrics \
   --metrics.influxdb \
-  --metrics.influxdb.endpoint=http://influxdb:8086 \
+  --metrics.influxdb.endpoint=http://localhost:8086 \
   --metrics.influxdb.database=l2geth \
   --syncmode=full \
   --gcmode="$NODE_TYPE" \
@@ -36,5 +36,5 @@ exec geth \
   --authrpc.jwtsecret=/shared/jwt.txt \
   --rollup.sequencerhttp="$BEDROCK_SEQUENCER_HTTP" \
   --rollup.disabletxpoolgossip=true \
-  --rollup.historicalrpc=http://l2geth:8545 \
+  --rollup.historicalrpc=http://localhost:8545 \
   $@
